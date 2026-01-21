@@ -91,68 +91,42 @@ class GameController extends Controller
     ];
 
     // Consolas y sus juegos influyentes (simplificado)
+    // Usando las imágenes de juegos existentes como representación de las consolas
     private static $consoles = [
         [
-            'slug' => 'atari-2600',
-            'name' => 'Atari 2600',
-            'image' => '/images/consoles/atari-2600.svg',
+            'slug' => 'arcade',
+            'name' => 'Arcade Clásico',
+            'image' => '/images/space-invaders.svg',
             'games' => [
-                ['title' => 'Pong', 'year' => 1972, 'image' => '/images/games/pong.svg'],
-                ['title' => 'Adventure', 'year' => 1979, 'image' => '/images/games/adventure.svg'],
+                ['title' => 'Space Invaders', 'year' => 1978, 'image' => '/images/space-invaders.svg'],
+                ['title' => 'Pac-Man', 'year' => 1980, 'image' => '/images/pacman.svg'],
+                ['title' => 'Donkey Kong', 'year' => 1981, 'image' => '/images/donkey-kong.svg'],
+                ['title' => 'Street Fighter II', 'year' => 1991, 'image' => '/images/street-fighter.svg'],
             ]
         ],
         [
             'slug' => 'nes',
-            'name' => 'NES',
-            'image' => '/images/consoles/nes.svg',
+            'name' => 'NES - Nintendo 8-bit',
+            'image' => '/images/mario.svg',
             'games' => [
                 ['title' => 'Super Mario Bros', 'year' => 1985, 'image' => '/images/mario.svg'],
                 ['title' => 'The Legend of Zelda', 'year' => 1986, 'image' => '/images/zelda.svg'],
             ]
         ],
         [
-            'slug' => 'snes',
-            'name' => 'SNES',
-            'image' => '/images/consoles/snes.svg',
+            'slug' => 'game-boy',
+            'name' => 'Game Boy',
+            'image' => '/images/tetris.svg',
             'games' => [
-                ['title' => 'Super Mario World', 'year' => 1990, 'image' => '/images/games/smw.svg'],
-                ['title' => 'Chrono Trigger', 'year' => 1995, 'image' => '/images/games/chronotrigger.svg'],
+                ['title' => 'Tetris', 'year' => 1989, 'image' => '/images/tetris.svg'],
             ]
         ],
         [
             'slug' => 'mega-drive',
-            'name' => 'Mega Drive',
-            'image' => '/images/consoles/mega-drive.svg',
+            'name' => 'Sega Mega Drive',
+            'image' => '/images/sonic.svg',
             'games' => [
                 ['title' => 'Sonic the Hedgehog', 'year' => 1991, 'image' => '/images/sonic.svg'],
-                ['title' => 'Shinobi', 'year' => 1989, 'image' => '/images/games/shinobi.svg'],
-            ]
-        ],
-        [
-            'slug' => 'game-boy',
-            'name' => 'Game Boy',
-            'image' => '/images/consoles/game-boy.svg',
-            'games' => [
-                ['title' => 'Tetris', 'year' => 1989, 'image' => '/images/tetris.svg'],
-                ['title' => 'Pokémon Red', 'year' => 1996, 'image' => '/images/games/pokemon-red.svg'],
-            ]
-        ],
-        [
-            'slug' => 'playstation',
-            'name' => 'PlayStation',
-            'image' => '/images/consoles/playstation.svg',
-            'games' => [
-                ['title' => 'Final Fantasy VII', 'year' => 1997, 'image' => '/images/games/ff7.svg'],
-                ['title' => 'Metal Gear Solid', 'year' => 1998, 'image' => '/images/games/mgs.svg'],
-            ]
-        ],
-        [
-            'slug' => 'psp',
-            'name' => 'PSP',
-            'image' => '/images/consoles/psp.svg',
-            'games' => [
-                ['title' => 'God of War: Chains of Olympus', 'year' => 2008, 'image' => '/images/games/gow-cop.svg'],
-                ['title' => 'Crisis Core: Final Fantasy VII', 'year' => 2007, 'image' => '/images/games/crisis-core.svg'],
             ]
         ],
     ];
